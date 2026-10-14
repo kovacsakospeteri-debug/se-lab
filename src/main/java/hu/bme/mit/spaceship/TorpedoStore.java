@@ -38,6 +38,7 @@ public class TorpedoStore {
     boolean success = false;
 
     // simulate random overheating of the launcher bay which prevents firing
+    //got changed to be more efficient, now theres only one private random object
     double r = this.generator.nextDouble();
 
     if (r >= FAILURE_RATE) {
